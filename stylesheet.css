@@ -1,0 +1,89 @@
+/* header
+=================================*/
+header
+{
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e8bc23;
+    
+}
+
+.logo
+{
+    display: inline-block;
+    margin-left: 20px;
+    width: 227px;
+    margin-top: 15px;
+}
+
+.logo p
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+    margin: 0 0;
+    color: #e8bc23;
+    display: inline-block;
+}
+
+.logo a
+{
+    text-decoration: none;   
+}
+
+.logoEffect
+{    
+   width: 100%;
+   height: 2px;
+   background-color: #e8bc23;
+   display: inline-block;
+   position: relative;
+   opacity: 0;
+}
+
+.navButtons
+{
+    float: right;
+    height: 100%;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.navButtons li p
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin: 15px;
+    color: #e8bc23;
+}
+
+.navButtons li
+{
+    display: inline-block;   
+    float: right;
+    margin: 2px; 0;
+}
+
+.button
+{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    height: 55px;
+    cursor:pointer;
+    float: right;
+}
+
+.buttonBorder
+{
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    border: 1px solid orange;
+    opacity: 0;
+}
+
+.button p
+{
+    font-family: 'Open Sans', sans-serif;
+}
