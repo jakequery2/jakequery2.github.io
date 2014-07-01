@@ -1,3 +1,11 @@
+/* globals
+=============================*/
+p a
+{
+    color:#e8bc23; 
+    font-weight: bold;
+}
+
 /* header
 =================================*/
 header
@@ -116,7 +124,42 @@ header
 {
     width: 80%;
     margin-left: 10%;
+    margin-top: 150px;
     background-color: none;
     height: 600px;
     text-align: center;    
 }
+
+.mainText li
+{
+    margin-top: 150px;   
+}
+
+.mainText li h1
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+    color: #e8bc23;
+}
+
+.mainText li p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.spacetaker
+{
+    height: 400px;
+}
+
