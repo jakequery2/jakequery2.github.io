@@ -43,10 +43,10 @@ header
 
 .navButtons
 {
-    float: right;
+    display: inline-block;
     height: 100%;
-    width: 50%;
-    margin-top: 5px;
+    background-color: none;
+    float: right;
 }
 
 .navButtons li p
@@ -61,7 +61,7 @@ header
 {
     display: inline-block;   
     float: right;
-    margin: 2px; 0;
+    margin: 7px 5px;
 }
 
 .button
@@ -86,4 +86,37 @@ header
 .button p
 {
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Banner
+====================================*/
+.banner
+{
+    width: 100%;
+    height: 400px;
+    background-color: #e8bc23;
+    display: table;
+}
+
+.banner p
+{
+    display: table-cell;
+    font-family: "courier new";
+    padding-left: 22%;
+    height: 100%;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 130px;
+    color: white;
+}
+
+/* main content
+=========================================*/
+.wrapper
+{
+    width: 80%;
+    margin-left: 10%;
+    background-color: none;
+    height: 600px;
+    text-align: center;    
 }
