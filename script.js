@@ -1,29 +1,51 @@
-var nameHasBeenTyped = false;
-
 function manageNameSize()
-{
-	$('.banner p').css('font-size',($(window).width()*0.08)+'px');    
-}
+    {
+        $('.banner p').css('font-size', ($(window).width() * 0.08) + 'px');    
+    }
 
-function typeName()
+function typeNameTest(name, iteration) 
+    {
+        var delayTime = 100;
+        // Prevent our code executing if there are no letters left
+        if (iteration === name.length){
+            flashUnderscore();
+            return;
+        }
+        
+        setTimeout(function() {
+            // Set the name to the current text + the next character
+            // whilst incrementing the iteration variable            
+            
+            $('.banner p').text( $('.banner p').text().slice(0, -1) + name[iteration++] + "_" );
+            
+            // Re-trigger our function
+            typeNameTest(name, iteration);
+        }, delayTime);
+    }
+
+function flashUnderscore()
 {
-    var delayTime = 500;
+    setInterval(function() 
+    {
+        if(underscoreToggle == 0)
+        {
+            underscoreToggle = 1;
+            $(".banner p").text('Jake Demian ');
+        }
+        else
+        {
+            underscoreToggle = 0;
+            $(".banner p").text('Jake Demian_');
+        }
+    }, 500);
     
-    
-//    setTimeout(function(){$(".banner p").text('J_');}, 500);
-//    setTimeout(function(){$(".banner p").text('Ja_');}, 500);
-//    setTimeout(function(){$(".banner p").text('Jak_');}, 500);
-    
-    
-    
-    nameHasBeenTyped = true;
 }
 
 $(document).ready(function()
 {
     //initialize window
     manageNameSize();
-    typeName();
+    typeNameTest("Jake Demian", 0);
     
     // logo effect
     var animationSpeed = 100;
@@ -53,22 +75,7 @@ $(document).ready(function()
     //banner
     underscoreToggle = 1;
     
-    if(nameHasBeenTyped)
-    {
-        setInterval(function() 
-        {
-            if(underscoreToggle == 0)
-            {
-                underscoreToggle = 1;
-                $(".banner p").text('Jake Demian_');
-            }
-            else
-            {
-                underscoreToggle = 0;
-                $(".banner p").text('Jake Demian  ');
-            }
-        }, 500);
-    }
+    //flashUnderscore();
     
     
     $(window).resize(function()
