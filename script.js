@@ -5,7 +5,7 @@ function manageNameSize()
 
 function typeNameTest(name, iteration) 
     {
-        var delayTime = 100;
+        var delayTime = 150;
         // Prevent our code executing if there are no letters left
         if (iteration === name.length){
             flashUnderscore();
