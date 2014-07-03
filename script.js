@@ -71,7 +71,7 @@ $(document).ready(function()
        $('.logoEffect').dequeue().animate({top: '15'}, animationSpeed);
     });
     
-    var buttonEffect = 200;
+    var buttonEffect = 75;
     
     //nav button effect
     $('.button').hover(function()
