@@ -152,6 +152,46 @@ header
     font-size: 20px;
 }
 
+.priceSection h2
+{
+    margin-top: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 27px;
+    color: black;
+}
+
+.hourly
+{
+    width: 200px;
+    height: 100px;
+    background-color: #e8bc23;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    cursor: default;
+    transition-property: border-radius;
+    transition: 0.5s 0 ease;
+}
+
+.hourly:hover
+{
+    transition: 0.2s 0 ease;
+    border-radius: 0;
+}
+
+.hourly p
+{
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    display: inline-block;
+    font-size: 60px;
+    margin-top: 10px;
+    cursor: default;
+    
+}
+
+
+
 /* Quote ==================================*/
 
 .quotesection
@@ -172,6 +212,55 @@ header
     text-align: center;
     opacity: 0;
 }
+
+/* past job
+==========================================*/
+.pastjob
+{
+    width: 80%;
+    border: 2px solid #e8bc23;
+    display: inline-block;
+    margin: 10px auto;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    transition-property: border-left, border-right;
+    transition: 0.1s 0 linear;
+}
+
+.pastjob:hover
+{
+    border-left: 8px solid #e8bc23;
+    border-right: 8px solid #e8bc23;
+    transition: 0.1s 0 linear;
+}
+
+.pastjob img
+{
+    float:right;
+    margin-right: 6%;
+    max-height: 400px;
+}
+
+.pastjob h1
+{
+    font-size: 40px;
+    white-space: normal;
+    margin-left: 5%;
+    
+}
+
+.pastjob p
+{
+    font-size: 22px;
+    white-space: normal;
+    margin: 0 5%;
+}
+
+.joblink:not(.default):link    { color: black; }
+.joblink:not(.default):visited { color: black; }
+
+
+
 
 /* Footer
 ==========================================*/

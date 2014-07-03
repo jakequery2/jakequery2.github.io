@@ -1,6 +1,9 @@
 function manageNameSize()
     {
-        $('.banner p').css('font-size', ($(window).width() * 0.08) + 'px');    
+        $('.banner p').css('font-size', ($(window).width() * 0.08) + 'px');
+        
+        $('.pastjob h1').css('font-size', ($(window).width() * 0.028) + 'px');
+        $('.pastjob p').css('font-size', ($(window).width() * 0.018) + 'px'); 
     }
 
 function typeNameTest(name, iteration) 
@@ -39,6 +42,13 @@ function flashUnderscore()
         }
     }, 500);
     
+}
+
+function manageJobPanelSize()
+{
+    var totalTextHeight = $(".pastjob h1").height() + $(".pastjob p").height();
+    
+    $(".pastjob").height(totalTextHeight + 100);
 }
 
 $(document).ready(function()
