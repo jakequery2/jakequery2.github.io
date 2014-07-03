@@ -260,21 +260,6 @@ header
 .joblink:not(.default):visited { color: black; }
 
 
-/* contact form
-==============================*/
-.contactForm
-{
-    font-family: 'Comfortaa', cursive;
-}
-
-.smallInput
-{
-    height: 30px;
-    width: 300px;
-    font-size: 26px;
-    border-radius: 4px;
-    border: 2px solid #e8bc23;
-}
 
 
 /* Footer
@@ -314,7 +299,7 @@ footer img
 {
     width: 50%;
     opacity: 0.25;
-    margin-bottom: -20%;
+    margin-bottom: -15%;
 }
 
 
