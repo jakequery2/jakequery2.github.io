@@ -27,30 +27,24 @@
             
             <ul class="navButtons">
                 <li>
-                    <a href="contact.html">
-                        <div class="button">                    
-                        <div class="buttonBorder"></div>
-                        <p>Contact</p>
-                        </div>
-                    </a>
+                    <div class="button" id="contact">                    
+                    <div class="buttonBorder"></div>
+                    <p>Contact</p>
+                    </div>
                 </li>
                 
                 <li>
-                    <a href="mywork.html">
-                        <div class="button">
-                        <div class="buttonBorder"></div>
-                        <p>My Work</p>
-                        </div>
-                    </a>
+                    <div class="button" id="work">
+                    <div class="buttonBorder"></div>
+                    <p>My Work</p>
+                    </div>
                 </li>
                 
                 <li>
-                    <a href="index.html">
-                        <div class="button">
-                        <div class="buttonBorder"></div>
-                        <p class="selected">About Me</p>
-                        </div>
-                    </a>
+                    <div class="button" id="about">
+                    <div class="buttonBorder"></div>
+                    <p>About Me</p>
+                    </div>
                 </li>
             </ul>
         </header>
@@ -59,8 +53,9 @@
             <p></p>
         </div>
         
+        <div class="maingradient">
         <div class="wrapper">
-            <ul class="mainText">
+            <ul class="mainText" id="aboutScroll">
                 <li>
                     <h1>So...who am I?</h1>
                     <p>I am a senior at the University of Akron.  I'm majoring in Computer Engineering and minoring in Computer Science and Mathematics.  I have been writing code since age 9.  This is what I love to do, and I'd love to put my skills to work for you!</p>
@@ -83,9 +78,50 @@
                 <h2 class="quote">"I believe Jake's greatest strength is his ability to work independently and figure things out for himself.  Jake was able to accept a task with a small amount of guidance, investigate it himself, and then develop his own solution.  He learns quickly and can self-teach which will be very beneficial in the computer engineering field."</h2>
                 <h1 class="credit">-Ken O., STERIS Corporation</h1>
             </div>
+
+
+            <ul class="mainText" id="workScroll">
+                <li>
+                    <h1>Past Work</h1>
+                    <p>This website was created using HTML, SASS (CSS), and jQuery.  While I may be new to this particular market, I am certainly no stranger to working in the Computer Science / Computer Engineering field.  Here are a couple of the nine-to-fives that I've had:</p>
+                    
+                </li>
+            </ul>
+            
+            <a class="joblink" href="http://nanotronicsimaging.com" target="_blank">
+                <div class="pastjob">
+                    <img src="nanotronics.png"/>
+                    <h1>Nanotronics Imaging</h1>
+                    <p>Software Engineer - Intern<br>Coded Primarily in C++</p>
+                </div>
+            </a>
+            
+            <a class="joblink" href="http://steris.com" target="_blank">
+                <div class="pastjob">
+                    <img src="steris.png"/>
+                    <h1>STERIS Corporation</h1>
+                    <p>Software Engineer - Intern<br>Coded in C++, C#, and VB</p>
+                </div>   
+            </a>    
+
+            <ul class="mainText" id="contactScroll">
+                <li>
+                    <h1>Interested in working with me?</h1>
+                    <p>If you would like to contact me regarding a job, please use one of the following methods:</p>
+                    <pre><p>Email:       <a href="mailto:jakedemiandev@gmail.com">jakedemiandev [at] gmail.com</a></p></pre>
+                    <pre><p>Phone (call/text):                     <a href="tel:4408971768">(440)897-1768</a></p></pre>
+                </li>
+                
+                <li>
+                    <h1>Have any other questions, comments, or concerns?</h1>
+                    <p>Check out the social media links at the bottom of the page!  Or, you can still send an email to my email address above if you would prefer.</p>
+                </li>
+            </ul>   
+
+            <div class="spacetaker"></div>
                         
         </div> <!-- wrapper end -->
-        
+        </div>
         
         <footer>
             <p>Copyright &copy;2014 Jake Demian</p>
