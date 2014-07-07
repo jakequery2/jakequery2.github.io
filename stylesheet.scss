@@ -1,5 +1,6 @@
 // vars /////////////////////////////////////
-$mainColor: #e8bc23;
+$mainColor:  #e8bc23;
+$mainColorLight: lighten($mainColor, 35%);
 
 /* globals
 =============================*/
@@ -135,7 +136,7 @@ header
 .maingradient
 {
     width: 100%;
-    background: linear-gradient(white, #F0EBDB);
+    background: linear-gradient(white, $mainColorLight);
     margin-bottom: -80px;
 }
 
